@@ -1,0 +1,100 @@
+ /* Общий стиль для страницы */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Тёмный фон (тёмно-серый) */
+    color: #f5f5dc; /* Светлый текст (кремовый) */
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок страницы */
+h1 {
+    color: #f5f5dc; /* Цвет текста соответствует фону карточек */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ссылки */
+a {
+    text-decoration: none;
+    color: #d4af37; /* Золотистый цвет для ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffc107; /* Светло-золотистый цвет при наведении */
+}
+
+/* Контейнер для карточек туристических мест */
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Карточки туристических мест */
+.place-item {
+    border: 1px solid #3d3d3d; /* Граница карточки (тёмно-серая) */
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    background: #2f2f2f; /* Фон карточки (тёмно-серый) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Тень карточки */
+    color: #f5f5dc; /* Цвет текста */
+}
+
+/* Заголовок карточки */
+.place-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f5f5dc; /* Кремовый текст */
+}
+
+/* Описание карточки */
+.place-item p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #f5f5dc; /* Кремовый текст */
+}
+
+/* Кнопка "Подробнее" */
+.place-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #444444; /* Тёмный фон кнопки */
+    color: #f5f5dc; /* Кремовый текст */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.place-link:hover {
+    background: #5c5c5c; /* Светлее при наведении */
+    color: #fff; /* Белый текст при наведении */
+}
+
+/* Контейнер для панорамы */
+.panorama-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Изображение панорамы */
+.panorama-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Максимальная высота изображения */
+    object-fit: cover; /* Обрезка для заполнения контейнера */
+}
+/* Изображения в карточках */
+.place-image {
+    width: 100%; /* Изображение занимает всю ширину карточки */
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Сохраняет пропорции, обрезая лишнее */
+    border-top-left-radius: 8px; /* Скругление углов сверху */
+    border-top-right-radius: 8px;
+    margin-bottom: 10px; /* Отступ между изображением и текстом */
+}
