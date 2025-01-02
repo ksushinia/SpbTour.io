@@ -105,6 +105,9 @@ a:hover {
 }
 
 iframe {
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid #ccc; /* Легкая серая рамка */
+    border-radius: 8px; /* Сглаживание углов */
+    width: 100%; /* Ширина карты растягивается на весь контейнер */
+    height: 400px; /* Высота карты */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень
 }
