@@ -1,5 +1,5 @@
- /* Общий стиль для страницы */
- body {
+/* Общий стиль для страницы */
+body {
     font-family: Arial, sans-serif;
     background-color: #1c1c1c; /* Тёмный фон (тёмно-серый) */
     color: #f5f5dc; /* Светлый текст (кремовый) */
@@ -9,7 +9,7 @@
 
 /* Заголовок страницы */
 h1 {
-    color: #f5f5dc; /* Цвет текста соответствует фону карточек */
+    color: #f5f5dc; /* Цвет текста */
     text-align: center;
     margin-top: 20px;
 }
@@ -36,27 +36,26 @@ a:hover {
 
 /* Карточки туристических мест */
 .place-item {
-    border: 1px solid #3d3d3d; /* Граница карточки (тёмно-серая) */
+    border: 1px solid #3d3d3d; /* Граница карточки */
     border-radius: 8px;
     padding: 15px;
     width: 300px;
-    background: #2f2f2f; /* Фон карточки (тёмно-серый) */
+    background: #2f2f2f; /* Фон карточки */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Тень карточки */
     color: #f5f5dc; /* Цвет текста */
-}
-
-/* Заголовок карточки */
-.place-item h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #f5f5dc; /* Кремовый текст */
 }
 
 /* Описание карточки */
 .place-item p {
     font-size: 1em;
     margin-bottom: 15px;
-    color: #f5f5dc; /* Кремовый текст */
+}
+
+
+/* Описание карточки */
+.place-item p {
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
 /* Кнопка "Подробнее" */
@@ -64,7 +63,7 @@ a:hover {
     display: inline-block;
     padding: 10px 15px;
     background: #444444; /* Тёмный фон кнопки */
-    color: #f5f5dc; /* Кремовый текст */
+    color: #f5f5dc; /* Цвет текста */
     text-decoration: none;
     border-radius: 5px;
 }
@@ -85,19 +84,28 @@ a:hover {
 /* Изображение панорамы */
 .panorama-image {
     width: 100%;
-    height: auto;
     max-height: 400px; /* Максимальная высота изображения */
     object-fit: cover; /* Обрезка для заполнения контейнера */
 }
+
 /* Изображения в карточках */
 .place-image {
-    width: 100%; /* Изображение занимает всю ширину карточки */
-    height: 200px; /* Фиксированная высота изображения */
-    object-fit: cover; /* Сохраняет пропорции, обрезая лишнее */
-    border-top-left-radius: 8px; /* Скругление углов сверху */
-    border-top-right-radius: 8px;
-    margin-bottom: 10px; /* Отступ между изображением и текстом */
+    display: block; /* Для центрирования */
+    max-width: 800px; /* Ограничиваем ширину изображения */
+    width: 100%; /* Делаем изображение адаптивным */
+    height: auto; /* Сохраняем пропорции */
+    object-fit: cover; /* Сохраняем обрезку для заполнения */
+    border-radius: 8px; /* Сглаживаем углы */
+    margin: 10px auto; /* Центрируем изображение и добавляем отступы сверху и снизу */
 }
+
+/* Секция с подробным описанием места */
+.place-description p {
+    line-height: 1.8; /* Увеличиваем расстояние между строками */
+}
+
+
+/* Карта */
 .map-container {
     margin: 20px auto;
     text-align: center;
@@ -107,7 +115,19 @@ a:hover {
 iframe {
     border: 2px solid #ccc; /* Легкая серая рамка */
     border-radius: 8px; /* Сглаживание углов */
-    width: 100%; /* Ширина карты растягивается на весь контейнер */
-    height: 400px; /* Высота карты */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Стиль для изображений на главной странице */
+.main-page-image {
+    width: auto; /* Оригинальная ширина изображения */
+    max-width: none; /* Убираем ограничение по ширине */
+    height: auto; /* Оригинальная высота изображения */
+    border-radius: 8px; /* Сглаженные углы */
+    display: block; /* Центрирование изображения */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; /* Отступ между изображениями и текстом */
 }
