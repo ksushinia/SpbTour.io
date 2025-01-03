@@ -86,6 +86,7 @@ a:hover {
     width: 100%;
     max-height: 400px; /* Максимальная высота изображения */
     object-fit: cover; /* Обрезка для заполнения контейнера */
+    border-radius: 0;
 }
 
 /* Изображения в карточках */
@@ -101,9 +102,16 @@ a:hover {
 
 /* Секция с подробным описанием места */
 .place-description p {
+    text-indent: 2em; /* Отступ в начале абзаца */
     line-height: 1.8; /* Увеличиваем расстояние между строками */
 }
 
+.place-details ul {
+    line-height: 2; /* Увеличенное расстояние между строками в списке */
+}
+.place-details li {
+    margin-bottom: 10px; /* Добавить отступ между пунктами списка */
+}
 
 /* Карта */
 .map-container {
@@ -130,4 +138,83 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px; /* Отступ между изображениями и текстом */
+}
+/* Стиль для слайдера */
+.image-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-images {
+    position: relative;
+}
+
+.slide {
+    display: none; /* Скрываем все слайды по умолчанию */
+}
+
+
+/* Показать изображение для активной радио-кнопки */
+#slide1:checked ~ .slider-images .slide:nth-child(1),
+#slide2:checked ~ .slider-images .slide:nth-child(2),
+#slide3:checked ~ .slider-images .slide:nth-child(3),
+#slide4:checked ~ .slider-images .slide:nth-child(4),
+#slide5:checked ~ .slider-images .slide:nth-child(5) {
+    display: block; /* Показываем слайд, соответствующий выбранной радио-кнопке */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px; /* Радиус закругления краёв */
+}
+
+.slider-controls {
+    position: absolute;
+    top: -20px; /* Отступ сверху для размещения кнопок под изображением */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-control {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-control:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Радио-кнопки скрыты */
+input[type="radio"] {
+    display: none;
+}
+
+/* Показать кнопки управления */
+input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(1) {
+    background-color: #d4af37;
+}
+
+input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(2) {
+    background-color: #d4af37;
+}
+
+input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(3) {
+    background-color: #d4af37;
+}
+
+input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(4) {
+    background-color: #d4af37;
+}
+
+input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(5) {
+    background-color: #d4af37;
 }
