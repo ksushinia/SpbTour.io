@@ -7,8 +7,69 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Елагин остров</h1>
-<p>Елагин остров — это живописное место в Санкт-Петербурге, где расположены парк, дворец и музей. Идеальное место для прогулок на свежем воздухе и отдыха в центре города.</p>
-<a href="index.html" class="back-link">Вернуться на главную</a>
+    <h1>Елагин остров</h1>
+    <!-- Подробное описание места -->
+    <section class="place-description">
+        <!-- Слайдер картинок -->
+        <div class="image-slider">
+            <input type="radio" id="slide1" name="slider" checked>
+            <input type="radio" id="slide2" name="slider">
+            <input type="radio" id="slide3" name="slider">
+            <input type="radio" id="slide4" name="slider">
+            <input type="radio" id="slide5" name="slider">
+
+            <div class="slider-images">
+                <div class="slide">
+                    <img src="images/elagin1.jpeg" alt="Елагин остров 1">
+                </div>
+                <div class="slide">
+                    <img src="images/elagin2.jpg" alt="Елагин остров 2">
+                </div>
+                <div class="slide">
+                    <img src="images/elagin3.jpg" alt="Елагин остров 3">
+                </div>
+                <div class="slide">
+                    <img src="images/elagin4.jpg" alt="Елагин остров 4">
+                </div>
+                <div class="slide">
+                    <img src="images/elagin5.jpg" alt="Елагин остров 5">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <label for="slide1" class="slider-control"></label>
+                <label for="slide2" class="slider-control"></label>
+                <label for="slide3" class="slider-control"></label>
+                <label for="slide4" class="slider-control"></label>
+                <label for="slide5" class="slider-control"></label>
+            </div>
+        </div>
+
+        <p>Елагин остров — живописный остров в Санкт-Петербурге, расположенный в дельте реки Невы. Он знаменит своими парками, дворцом и музеем, предлагая идеальное место для прогулок, пикников и культурного отдыха.</p>
+
+        <p>На территории острова находится Елагин дворец — великолепный памятник архитектуры XIX века, окружённый зелёными аллеями и водоёмами. В парке можно покататься на лодках, велосипедах или просто насладиться тишиной природы в самом центре города.</p>
+
+        <p>На острове также расположен небольшой зоопарк, который особенно порадует детей. Здесь можно увидеть разных животных и птиц, некоторых из них разрешено кормить и гладить.</p>
+
+        <p>Елагин остров часто становится местом проведения различных мероприятий: концертов, выставок и спортивных событий. Это прекрасное место как для уединённого отдыха, так и для семейных прогулок.</p>
+    </section>
+
+    <!-- Адрес, часы работы и телефон -->
+    <section class="place-details">
+        <h2>Информация</h2>
+        <ul>
+            <li><strong>Адрес:</strong> Елагин остров, 4, Санкт-Петербург, 197110, Россия</li>
+            <li>
+                <strong>Часы работы:</strong>
+                <ul>
+                    <li>Ежедневно: 06:00 – 23:00</li>
+                    <li>Елагин дворец: 10:00 – 18:30 (выходной — понедельник)</li>
+                </ul>
+            </li>
+            <li><strong>Телефон:</strong> +7 (812) 430-09-11</li>
+        </ul>
+    </section>
+
+    <!-- Ссылка на главную страницу -->
+    <a href="index.html" class="back-link">Вернуться на главную</a>
 </body>
 </html>

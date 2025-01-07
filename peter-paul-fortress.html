@@ -7,8 +7,81 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Петропавловская крепость</h1>
-<p>Петропавловская крепость в Санкт-Петербурге — одна из старейших исторических крепостей города, основанная Петром I в 1703 году.</p>
-<a href="index.html" class="back-link">Вернуться на главную</a>
+    <h1>Петропавловская крепость</h1>
+    <!-- Подробное описание места -->
+    <section class="place-description">
+        <!-- Слайдер картинок -->
+        <div class="image-slider">
+            <input type="radio" id="slide1" name="slider" checked>
+            <input type="radio" id="slide2" name="slider">
+            <input type="radio" id="slide3" name="slider">
+            <input type="radio" id="slide4" name="slider">
+            <input type="radio" id="slide5" name="slider">
+
+            <div class="slider-images">
+                <div class="slide">
+                    <img src="images/petropavlovskaya1.jpg" alt="Петропавловская крепость 1">
+                </div>
+                <div class="slide">
+                    <img src="images/petropavlovskaya2.jpeg" alt="Петропавловская крепость 2">
+                </div>
+                <div class="slide">
+                    <img src="images/petropavlovskaya3.jpg" alt="Петропавловская крепость 3">
+                </div>
+                <div class="slide">
+                    <img src="images/petropavlovskaya4.png" alt="Петропавловская крепость 4">
+                </div>
+                <div class="slide">
+                    <img src="images/petropavlovskaya5.jpg" alt="Петропавловская крепость 5">
+                </div>
+            </div>
+            <div class="slider-controls">
+                <label for="slide1" class="slider-control"></label>
+                <label for="slide2" class="slider-control"></label>
+                <label for="slide3" class="slider-control"></label>
+                <label for="slide4" class="slider-control"></label>
+                <label for="slide5" class="slider-control"></label>
+            </div>
+        </div>
+
+        <p>Петропавловская крепость — одно из первых строений Санкт-Петербурга, основанное Петром I в 1703 году для защиты города от нападений шведов. Сегодня крепость является историческим и культурным центром, привлекающим тысячи туристов.</p>
+
+        <p>На территории крепости находятся Петропавловский собор, где покоятся российские императоры, музей истории Санкт-Петербурга, а также тюрьма Трубецкого бастиона, где содержались политические заключённые.</p>
+
+        <p>Традиционно, ежедневно с крепостной стены раздаётся пушечный выстрел, что является символом города. Кроме того, здесь проводятся экскурсии, выставки и различные культурные мероприятия.</p>
+    </section>
+
+    <!-- Адрес, часы работы и телефон -->
+    <section class="place-details"> 
+        <h2>Информация</h2>
+        <ul>
+            <li><strong>Адрес:</strong> Заячий остров, Санкт-Петербург, Россия</li>
+            <li>
+                <strong>Часы работы:</strong>
+                <ul>
+                    <li>С 09:00 до 21:00</li>
+                    <li>Выходной день – нет</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Петропавловский собор:</strong>
+                <ul>
+                    <li>С 10:00 до 18:00, вторник с 10:00 до 17:00</li>
+                    <li>Выходной день – среда</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Тюрьма Трубецкого бастиона:</strong>
+                <ul>
+                    <li>С 10:00 до 18:00, вторник с 10:00 до 17:00</li>
+                    <li>Выходной день – среда</li>
+                </ul>
+            </li>
+            <li><strong>Телефон:</strong> +7 (812) 230-64-31</li>
+        </ul>
+    </section>
+
+    <!-- Ссылка на главную страницу -->
+    <a href="index.html" class="back-link">Вернуться на главную</a>
 </body>
 </html>
