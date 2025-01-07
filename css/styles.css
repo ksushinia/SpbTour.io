@@ -102,15 +102,35 @@ a:hover {
 
 /* Секция с подробным описанием места */
 .place-description p {
+    padding: 10px;
     text-indent: 2em; /* Отступ в начале абзаца */
     line-height: 1.8; /* Увеличиваем расстояние между строками */
 }
 
-.place-details ul {
-    line-height: 2; /* Увеличенное расстояние между строками в списке */
+/* Секция с подробным описанием места */
+.place-details {
+    margin: 20px; /* Отступ от края экрана */
+    padding: 20px; /* Внутренние отступы для удобства чтения */
+    background-color: #2f2f2f; /* Фон, соответствующий стилю карточек */
+    border-radius: 8px; /* Закруглённые края */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Тень для выделения секции */
 }
+
+/* Список в секции */
+.place-details ul {
+    line-height: 2; /* Увеличенное расстояние между строками */
+    margin-left: 20px; /* Отступ списка от краёв */
+}
+
 .place-details li {
-    margin-bottom: 10px; /* Добавить отступ между пунктами списка */
+    margin-bottom: 10px; /* Отступ между элементами списка */
+}
+
+/* Общий стиль для текста в секции */
+.place-details p {
+    padding: 10px 0; /* Внутренний отступ для текста */
+    text-indent: 2em; /* Красная строка */
+    line-height: 1.8; /* Увеличенное расстояние между строками */
 }
 
 /* Карта */
@@ -217,4 +237,22 @@ input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(4) {
 
 input[type="radio"]:checked ~ .slider-controls .slider-control:nth-child(5) {
     background-color: #d4af37;
+}
+/* Стили для кнопки-ссылки */
+.back-link {
+    display: inline-block;
+    padding: 10px 20px; /* Внутренние отступы для удобства */
+    background: #444444; /* Тёмный фон кнопки */
+    color: #f5f5dc; /* Цвет текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 5px; /* Закруглённые края */
+    font-size: 16px; /* Размер шрифта */
+    margin: 20px; /* Отступ от края экрана */
+}
+
+/* Стили при наведении */
+.back-link:hover {
+    background: #5c5c5c; /* Светлее при наведении */
+    color: #fff; /* Белый текст при наведении */
+    text-decoration: underline; /* Добавляем подчёркивание при наведении */
 }
